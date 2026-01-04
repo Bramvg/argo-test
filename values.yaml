@@ -5,3 +5,11 @@
 # This will set the replicaset count more information can be found here: https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/
 replicaCount: 1
 
+paths:
+  client: /?(.*)
+  api: /api/?(.*)
+
+ports:
+  client: 3000
+  server: 5000
+  postgres: 5432
